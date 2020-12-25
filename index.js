@@ -1,3 +1,8 @@
+/*
+https://stephensugden.com/middleware_guide/
+http://evanhahn.com/understanding-express/
+A minimal and flexible node.js web application framework
+*/
 const express = require('express'),
      http = require('http'),
      morgan = require('morgan'),
