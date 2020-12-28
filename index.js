@@ -26,8 +26,26 @@ app.use('/:dishId',(req, res, next) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html');
   res.end('<html><body><h1>Express Server</h1></body></html>');
-
 });
+//PROMOTIONS
+const promotionsRouter = require('./routes/promoRouter');
+app.use('/promotions', promotionsRouter);
+app.use('/:promoId',(req, res, next) => {
+  console.log(req.headers);
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end('<html><body><h1>Express Server</h1></body></html>');
+});
+//LEADERS
+const leaderRouter = require('./routes/leaderRouter');
+app.use('/leaders', leaderRouter);
+app.use('/:leaderId',(req, res, next) => {
+  console.log(req.headers);
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end('<html><body><h1>Express Server</h1></body></html>');
+});
+
 
 const server = http.createServer(app);
 
