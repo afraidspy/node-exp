@@ -1,5 +1,5 @@
 # node-express
-# This is only an example
+# This is only an example with node and express
 # Commands
 # Introduction to Express
 #npm init
